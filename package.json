@@ -4,8 +4,10 @@
   "description": "weather app",
   "main": "server.js",
   "scripts": {
-    "server": "node server.js",
-    "start": "nodemon server.js"
+    "start": "node server.js",
+		"server": "nodemon run server.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \" npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
